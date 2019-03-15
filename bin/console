@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use App\Command;
+use PFWD\Vimeo\URI;
+
+$dotenv = Dotenv\Dotenv::create(__DIR__.'/../');
+$dotenv->load();
+
+$application = new Application();
+$application->add(new Command\VideoCommand(new URI\VideoURI()));
+$application->add(new Command\VideoListCommand(new URI\VideoURI()));
+$application->add(new Command\ProjectListCommand(new URI\ProjectURI()));
+$application->run();
