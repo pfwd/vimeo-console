@@ -10,7 +10,7 @@ Vimeo console commands
 
 ## Install
 ```
-composer require pfwd/vimeo-scripts
+composer require pfwd/vimeo-console
 ```
 
 ## Configure
@@ -21,9 +21,9 @@ Update the API credentials in .env
 
 # Build Docker Containers
 ```
-$ docker-machine create vimeo-scripts
-$ docker-machine env vimeo-scripts
-$ eval $(docker-machine env vimeo-scripts)
+$ docker-machine create vimeo-console
+$ docker-machine env vimeo-console
+$ eval $(docker-machine env vimeo-console)
 $ docker-compose up -d --build
 ```
 
@@ -32,5 +32,5 @@ See the scripts [index page](docs/scripts/index.md) for a list of available cons
 
 ## Uninstall
 ```
-$ docker-machine rm vimeo-scripts
+$ docker-machine rm vimeo-console
 ```
