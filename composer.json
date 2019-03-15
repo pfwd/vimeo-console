@@ -1,7 +1,7 @@
 {
     "name": "pfwd/vimeo-console",
     "description": "Symfony console scripts that interact with the Vimeo API",
-    "type": "project",
+    "type": "library",
     "keywords": ["vimeo","api", "uri"],
     "homepage": "https://github.com/pfwd/vimeo-console",
     "license": "MIT",
